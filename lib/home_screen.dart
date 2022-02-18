@@ -1,12 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:icon_pack/login_screen.dart';
 
+import 'messenger_screen.dart';
+
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xff191c1e),
+      extendBody: true,
       appBar: AppBar(
         backgroundColor: Color(0xff191c1e),
         elevation: 0,
@@ -161,6 +165,19 @@ class HomeScreen extends StatelessWidget {
                 ),
                 label: 'Text',
               ),
+              BottomNavigationBarItem(
+                  icon: IconButton(
+                    color: Colors.white,
+                    icon: Icon(Icons.messenger),
+                    onPressed: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => MessengerScreen()),
+                      );
+                    },
+                  ),
+                  label: 'Messenger'),
               BottomNavigationBarItem(
                   icon: IconButton(
                     color: Colors.white,

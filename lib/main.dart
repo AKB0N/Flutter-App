@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:icon_pack/messenger_screen.dart';
 
 import 'home_screen.dart';
-import 'messenger_screen.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-    statusBarColor: Color(0xff191c1e), // transparent status bar
-    systemNavigationBarColor: Color(0xff191c1e),
-    systemNavigationBarDividerColor: Color(0xff191c1e),
+    statusBarColor: Colors.transparent, // transparent status bar
+    systemNavigationBarColor: Colors.transparent,
+    systemNavigationBarDividerColor: Colors.transparent,
+    systemStatusBarContrastEnforced: false,
+    systemNavigationBarContrastEnforced: false,
   ));
   runApp(MyApp());
 }
@@ -19,12 +21,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme:
-          ThemeData(primarySwatch: Colors.blue, brightness: Brightness.light),
-      themeMode: ThemeMode.dark,
-      darkTheme: ThemeData(brightness: Brightness.dark),
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSwatch(primarySwatch: Colors.grey)
+            .copyWith(secondary: Color(0xfff0f0f3)),
+      ),
+      themeMode: ThemeMode.system,
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+      ),
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      home: MessengerScreen(),
     );
   }
 }
