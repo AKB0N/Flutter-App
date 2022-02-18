@@ -3,7 +3,7 @@
 A new Flutter project.
 
 # Previews
-<img src="https://raw.githubusercontent.com/AKB0N/Flutter-App/master/1.png" width="215"/> <img src="https://raw.githubusercontent.com/AKB0N/Flutter-App/master/2.png" width="215"/>
+<img src="https://raw.githubusercontent.com/AKB0N/Flutter-App/master/1.png" width="215"/> <img src="https://raw.githubusercontent.com/AKB0N/Flutter-App/master/2.png" width="215"/> <img src="https://lh6.googleusercontent.com/Nh1lzLas-KoevbOu-cLjSAPXEwkVaDl1EoRF4xwvAY4u2XRmxlnUvAhAV8BBCWQ4Fw4-1u3JfBk2qVvZNYla=w1960-h4096-rw" width="215"/>
 
 ## Getting Started
 
