@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:icon_pack/home_screen.dart';
-import 'package:icon_pack/login_screen.dart';
+
+import 'home_screen.dart';
+import 'messenger_screen.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
@@ -13,6 +14,8 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -21,23 +24,7 @@ class MyApp extends StatelessWidget {
       themeMode: ThemeMode.dark,
       darkTheme: ThemeData(brightness: Brightness.dark),
       debugShowCheckedModeBanner: false,
-      home: LoginScreen(),
+      home: HomeScreen(),
     );
   }
-}
-
-class ThemeClass {
-  static ThemeData lightTheme = ThemeData(
-      scaffoldBackgroundColor: Color(0xffd3e3fd),
-      colorScheme: ColorScheme.light(),
-      appBarTheme: AppBarTheme(
-        backgroundColor: Color(0xffd3e3fd),
-      ));
-
-  static ThemeData darkTheme = ThemeData(
-      scaffoldBackgroundColor: Color(0xff191c1e),
-      colorScheme: ColorScheme.dark(),
-      appBarTheme: AppBarTheme(
-        backgroundColor: Color(0xff191c1e),
-      ));
 }
