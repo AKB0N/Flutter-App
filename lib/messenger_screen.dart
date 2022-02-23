@@ -18,9 +18,11 @@ class MessengerScreen extends StatelessWidget {
               alignment: Alignment.topRight,
               children: const [
                 CircleAvatar(
-                    radius: 18.0,
-                    backgroundImage: NetworkImage(
-                        'https://scontent.fcai20-2.fna.fbcdn.net/v/t39.30808-1/260424014_4025339400902257_9114240320822830978_n.jpg?stp=dst-jpg_p160x160&_nc_cat=106&ccb=1-5&_nc_sid=7206a8&_nc_ohc=wl8Q7_xPVZwAX9eVN7f&_nc_ht=scontent.fcai20-2.fna&oh=00_AT9DDiKGHiMwn6i1C54xQrh2gxDGWai8Tv1mmmOKbwilXw&oe=6213482B')),
+                  radius: 18.0,
+                  backgroundImage: NetworkImage(
+                    'https://avatars.githubusercontent.com/u/19143657?v=4',
+                  ),
+                ),
                 CircleAvatar(
                   radius: 9.0,
                   backgroundColor: Colors.black,
@@ -29,22 +31,14 @@ class MessengerScreen extends StatelessWidget {
                   radius: 8.0,
                   backgroundColor: Colors.red,
                 ),
-                SizedBox(
-                  child: CircleAvatar(
-                    backgroundColor: Colors.transparent,
-                    radius: 5.0,
-                    child: Padding(
-                      padding: EdgeInsets.only(
-                        right: 5.0,
-                      ),
-                      child: Text(
-                        '1',
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 12.0,
-                            fontWeight: FontWeight.bold),
-                      ),
-                    ),
+                Padding(
+                  padding: EdgeInsetsDirectional.only(top: 1.5, end: 4.5),
+                  child: Text(
+                    '1',
+                    style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 12.0,
+                        fontWeight: FontWeight.bold),
                   ),
                 ),
               ],
@@ -59,7 +53,7 @@ class MessengerScreen extends StatelessWidget {
             ),
           ],
         ),
-        titleSpacing: 16.0,
+        titleSpacing: 20.0,
         actions: [
           IconButton(
             icon: CircleAvatar(
@@ -94,13 +88,13 @@ class MessengerScreen extends StatelessWidget {
         ],
       ),
       body: SingleChildScrollView(
-        scrollDirection: Axis.vertical,
-        child: Padding(
-          padding: EdgeInsets.all(16.0),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Container(
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Padding(
+              padding:
+                  const EdgeInsets.only(left: 16.0, right: 16.0, top: 16.0),
+              child: Container(
                 padding: EdgeInsets.all(9.0),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(30),
@@ -125,940 +119,251 @@ class MessengerScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              Column(
+            ),
+            SizedBox(
+              height: 20.0,
+            ),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Row(
                 children: [
                   SizedBox(
-                    height: 20.0,
+                    width: 20.0,
                   ),
-                  SingleChildScrollView(
-                    scrollDirection: Axis.horizontal,
-                    child: Row(
-                      children: [
-                        Container(
-                          width: 60.0,
-                          child: Column(
-                            children: [
-                              Stack(
-                                alignment: Alignment.bottomRight,
-                                children: const [
-                                  CircleAvatar(
-                                    radius: 30.0,
-                                    backgroundImage: NetworkImage(
-                                      'https://scontent.fcai20-2.fna.fbcdn.net/v/t39.30808-1/260424014_4025339400902257_9114240320822830978_n.jpg?stp=dst-jpg_p160x160&_nc_cat=106&ccb=1-5&_nc_sid=7206a8&_nc_ohc=wl8Q7_xPVZwAX9eVN7f&_nc_ht=scontent.fcai20-2.fna&oh=00_AT9DDiKGHiMwn6i1C54xQrh2gxDGWai8Tv1mmmOKbwilXw&oe=6213482B',
-                                    ),
-                                  ),
-                                  CircleAvatar(
-                                    radius: 9.0,
-                                    backgroundColor: Colors.black,
-                                  ),
-                                  CircleAvatar(
-                                    radius: 7.0,
-                                    backgroundColor: Colors.green,
-                                  ),
-                                ],
-                              ),
-                              SizedBox(
-                                height: 6.0,
-                              ),
-                              Text(
-                                'Ibrahim Fathelbab asdasdad  adasda',
-                                maxLines: 2,
-                                style: TextStyle(color: Colors.white),
-                              )
-                            ],
-                          ),
-                        ),
-                        SizedBox(
-                          width: 15.0,
-                        ),
-                        Container(
-                          width: 60.0,
-                          child: Column(
-                            children: [
-                              Stack(
-                                alignment: Alignment.bottomRight,
-                                children: const [
-                                  CircleAvatar(
-                                    radius: 30.0,
-                                    backgroundImage: NetworkImage(
-                                      'https://scontent.fcai20-2.fna.fbcdn.net/v/t39.30808-1/260424014_4025339400902257_9114240320822830978_n.jpg?stp=dst-jpg_p160x160&_nc_cat=106&ccb=1-5&_nc_sid=7206a8&_nc_ohc=wl8Q7_xPVZwAX9eVN7f&_nc_ht=scontent.fcai20-2.fna&oh=00_AT9DDiKGHiMwn6i1C54xQrh2gxDGWai8Tv1mmmOKbwilXw&oe=6213482B',
-                                    ),
-                                  ),
-                                  CircleAvatar(
-                                    radius: 9.0,
-                                    backgroundColor: Colors.black,
-                                  ),
-                                  CircleAvatar(
-                                    radius: 7.0,
-                                    backgroundColor: Colors.green,
-                                  ),
-                                ],
-                              ),
-                              SizedBox(
-                                height: 6.0,
-                              ),
-                              Text(
-                                'Ibrahim Fathelbab asdasdad  adasda',
-                                maxLines: 2,
-                                overflow: TextOverflow.ellipsis,
-                                style: TextStyle(color: Colors.white),
-                              )
-                            ],
-                          ),
-                        ),
-                        SizedBox(
-                          width: 20.0,
-                        ),
-                        Container(
-                          width: 60.0,
-                          child: Column(
-                            children: [
-                              Stack(
-                                alignment: Alignment.bottomRight,
-                                children: const [
-                                  CircleAvatar(
-                                    radius: 30.0,
-                                    backgroundImage: NetworkImage(
-                                      'https://scontent.fcai20-2.fna.fbcdn.net/v/t39.30808-1/260424014_4025339400902257_9114240320822830978_n.jpg?stp=dst-jpg_p160x160&_nc_cat=106&ccb=1-5&_nc_sid=7206a8&_nc_ohc=wl8Q7_xPVZwAX9eVN7f&_nc_ht=scontent.fcai20-2.fna&oh=00_AT9DDiKGHiMwn6i1C54xQrh2gxDGWai8Tv1mmmOKbwilXw&oe=6213482B',
-                                    ),
-                                  ),
-                                  CircleAvatar(
-                                    radius: 9.0,
-                                    backgroundColor: Colors.black,
-                                  ),
-                                  CircleAvatar(
-                                    radius: 7.0,
-                                    backgroundColor: Colors.green,
-                                  ),
-                                ],
-                              ),
-                              SizedBox(
-                                height: 6.0,
-                              ),
-                              Text(
-                                'Ibrahim Fathelbab asdasdad  adasda',
-                                maxLines: 2,
-                                overflow: TextOverflow.ellipsis,
-                                style: TextStyle(color: Colors.white),
-                              )
-                            ],
-                          ),
-                        ),
-                        SizedBox(
-                          width: 20.0,
-                        ),
-                        Container(
-                          width: 60.0,
-                          child: Column(
-                            children: [
-                              Stack(
-                                alignment: Alignment.bottomRight,
-                                children: const [
-                                  CircleAvatar(
-                                    radius: 30.0,
-                                    backgroundImage: NetworkImage(
-                                      'https://scontent.fcai20-2.fna.fbcdn.net/v/t39.30808-1/260424014_4025339400902257_9114240320822830978_n.jpg?stp=dst-jpg_p160x160&_nc_cat=106&ccb=1-5&_nc_sid=7206a8&_nc_ohc=wl8Q7_xPVZwAX9eVN7f&_nc_ht=scontent.fcai20-2.fna&oh=00_AT9DDiKGHiMwn6i1C54xQrh2gxDGWai8Tv1mmmOKbwilXw&oe=6213482B',
-                                    ),
-                                  ),
-                                  CircleAvatar(
-                                    radius: 9.0,
-                                    backgroundColor: Colors.black,
-                                  ),
-                                  CircleAvatar(
-                                    radius: 7.0,
-                                    backgroundColor: Colors.green,
-                                  ),
-                                ],
-                              ),
-                              SizedBox(
-                                height: 6.0,
-                              ),
-                              Text(
-                                'Ibrahim Fathelbab asdasdad  adasda',
-                                maxLines: 2,
-                                overflow: TextOverflow.ellipsis,
-                                style: TextStyle(color: Colors.white),
-                              )
-                            ],
-                          ),
-                        ),
-                        SizedBox(
-                          width: 20.0,
-                        ),
-                        Container(
-                          width: 60.0,
-                          child: Column(
-                            children: [
-                              Stack(
-                                alignment: Alignment.bottomRight,
-                                children: const [
-                                  CircleAvatar(
-                                    radius: 30.0,
-                                    backgroundImage: NetworkImage(
-                                      'https://scontent.fcai20-2.fna.fbcdn.net/v/t39.30808-1/260424014_4025339400902257_9114240320822830978_n.jpg?stp=dst-jpg_p160x160&_nc_cat=106&ccb=1-5&_nc_sid=7206a8&_nc_ohc=wl8Q7_xPVZwAX9eVN7f&_nc_ht=scontent.fcai20-2.fna&oh=00_AT9DDiKGHiMwn6i1C54xQrh2gxDGWai8Tv1mmmOKbwilXw&oe=6213482B',
-                                    ),
-                                  ),
-                                  CircleAvatar(
-                                    radius: 9.0,
-                                    backgroundColor: Colors.black,
-                                  ),
-                                  CircleAvatar(
-                                    radius: 7.0,
-                                    backgroundColor: Colors.green,
-                                  ),
-                                ],
-                              ),
-                              SizedBox(
-                                height: 6.0,
-                              ),
-                              Text(
-                                'Ibrahim Fathelbab asdasdad  adasda',
-                                maxLines: 2,
-                                overflow: TextOverflow.ellipsis,
-                                style: TextStyle(color: Colors.white),
-                              )
-                            ],
-                          ),
-                        ),
-                        SizedBox(
-                          width: 20.0,
-                        ),
-                        Container(
-                          width: 60.0,
-                          child: Column(
-                            children: [
-                              Stack(
-                                alignment: Alignment.bottomRight,
-                                children: const [
-                                  CircleAvatar(
-                                    radius: 30.0,
-                                    backgroundImage: NetworkImage(
-                                      'https://scontent.fcai20-2.fna.fbcdn.net/v/t39.30808-1/260424014_4025339400902257_9114240320822830978_n.jpg?stp=dst-jpg_p160x160&_nc_cat=106&ccb=1-5&_nc_sid=7206a8&_nc_ohc=wl8Q7_xPVZwAX9eVN7f&_nc_ht=scontent.fcai20-2.fna&oh=00_AT9DDiKGHiMwn6i1C54xQrh2gxDGWai8Tv1mmmOKbwilXw&oe=6213482B',
-                                    ),
-                                  ),
-                                  CircleAvatar(
-                                    radius: 9.0,
-                                    backgroundColor: Colors.black,
-                                  ),
-                                  CircleAvatar(
-                                    radius: 7.0,
-                                    backgroundColor: Colors.green,
-                                  ),
-                                ],
-                              ),
-                              SizedBox(
-                                height: 6.0,
-                              ),
-                              Text(
-                                'Ibrahim Fathelbab asdasdad  adasda',
-                                maxLines: 2,
-                                overflow: TextOverflow.ellipsis,
-                                style: TextStyle(color: Colors.white),
-                              )
-                            ],
-                          ),
-                        ),
-                        SizedBox(
-                          width: 20.0,
-                        ),
-                        Container(
-                          width: 60.0,
-                          child: Column(
-                            children: [
-                              Stack(
-                                alignment: Alignment.bottomRight,
-                                children: const [
-                                  CircleAvatar(
-                                    radius: 30.0,
-                                    backgroundImage: NetworkImage(
-                                      'https://scontent.fcai20-2.fna.fbcdn.net/v/t39.30808-1/260424014_4025339400902257_9114240320822830978_n.jpg?stp=dst-jpg_p160x160&_nc_cat=106&ccb=1-5&_nc_sid=7206a8&_nc_ohc=wl8Q7_xPVZwAX9eVN7f&_nc_ht=scontent.fcai20-2.fna&oh=00_AT9DDiKGHiMwn6i1C54xQrh2gxDGWai8Tv1mmmOKbwilXw&oe=6213482B',
-                                    ),
-                                  ),
-                                  CircleAvatar(
-                                    radius: 9.0,
-                                    backgroundColor: Colors.black,
-                                  ),
-                                  CircleAvatar(
-                                    radius: 7.0,
-                                    backgroundColor: Colors.green,
-                                  ),
-                                ],
-                              ),
-                              SizedBox(
-                                height: 6.0,
-                              ),
-                              Text(
-                                'Ibrahim Fathelbab asdasdad  adasda',
-                                maxLines: 2,
-                                overflow: TextOverflow.ellipsis,
-                                style: TextStyle(color: Colors.white),
-                              )
-                            ],
-                          ),
-                        ),
-                        SizedBox(
-                          width: 20.0,
-                        ),
-                        Container(
-                          width: 60.0,
-                          child: Column(
-                            children: [
-                              Stack(
-                                alignment: Alignment.bottomRight,
-                                children: const [
-                                  CircleAvatar(
-                                    radius: 30.0,
-                                    backgroundImage: NetworkImage(
-                                      'https://scontent.fcai20-2.fna.fbcdn.net/v/t39.30808-1/260424014_4025339400902257_9114240320822830978_n.jpg?stp=dst-jpg_p160x160&_nc_cat=106&ccb=1-5&_nc_sid=7206a8&_nc_ohc=wl8Q7_xPVZwAX9eVN7f&_nc_ht=scontent.fcai20-2.fna&oh=00_AT9DDiKGHiMwn6i1C54xQrh2gxDGWai8Tv1mmmOKbwilXw&oe=6213482B',
-                                    ),
-                                  ),
-                                  CircleAvatar(
-                                    radius: 9.0,
-                                    backgroundColor: Colors.black,
-                                  ),
-                                  CircleAvatar(
-                                    radius: 7.0,
-                                    backgroundColor: Colors.green,
-                                  ),
-                                ],
-                              ),
-                              SizedBox(
-                                height: 6.0,
-                              ),
-                              Text(
-                                'Ibrahim Fathelbab asdasdad  adasda',
-                                maxLines: 2,
-                                overflow: TextOverflow.ellipsis,
-                                style: TextStyle(color: Colors.white),
-                              )
-                            ],
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
+                  buildStoryItem(),
                   SizedBox(
-                    height: 20.0,
+                    width: 15.0,
                   ),
-                  Row(
-                    children: [
-                      Stack(
-                        alignment: Alignment.center,
-                        children: const [
-                          CircleAvatar(
-                            radius: 30.0,
-                            backgroundColor: Colors.blue,
-                          ),
-                          CircleAvatar(
-                            radius: 27.0,
-                            backgroundColor: Colors.black,
-                          ),
-                          CircleAvatar(
-                            radius: 24.0,
-                            backgroundImage: NetworkImage(
-                              'https://scontent.fcai20-2.fna.fbcdn.net/v/t39.30808-1/260424014_4025339400902257_9114240320822830978_n.jpg?stp=dst-jpg_p160x160&_nc_cat=106&ccb=1-5&_nc_sid=7206a8&_nc_ohc=wl8Q7_xPVZwAX9eVN7f&_nc_ht=scontent.fcai20-2.fna&oh=00_AT9DDiKGHiMwn6i1C54xQrh2gxDGWai8Tv1mmmOKbwilXw&oe=6213482B',
-                            ),
-                          ),
-                        ],
-                      ),
-                      SizedBox(
-                        width: 18.0,
-                      ),
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              'Ibrahim Fathelbab fasdfsfgsdfsfsfsfsfsfsfssdfs',
-                              overflow: TextOverflow.ellipsis,
-                              maxLines: 1,
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 17.0,
-                              ),
-                            ),
-                            Row(
-                              children: [
-                                SizedBox(
-                                  width: 200,
-                                  child: Text(
-                                    'give me your ***king money asdfsafsdfsf',
-                                    overflow: TextOverflow.ellipsis,
-                                    maxLines: 1,
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 15.0,
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: EdgeInsets.symmetric(horizontal: 5),
-                                  child: Container(
-                                    width: 3,
-                                    height: 3,
-                                    decoration: BoxDecoration(
-                                      color: Colors.white,
-                                      shape: BoxShape.circle,
-                                    ),
-                                  ),
-                                ),
-                                Text(
-                                  '7:03 AM',
-                                  style: TextStyle(
-                                      color: Colors.white, fontSize: 15.0),
-                                ),
-                              ],
-                            )
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
+                  buildStoryItem(),
                   SizedBox(
-                    height: 20.0,
+                    width: 15.0,
                   ),
-                  Row(
-                    children: [
-                      Stack(
-                        alignment: Alignment.center,
-                        children: const [
-                          CircleAvatar(
-                            radius: 30.0,
-                            backgroundColor: Colors.blue,
-                          ),
-                          CircleAvatar(
-                            radius: 27.0,
-                            backgroundColor: Colors.black,
-                          ),
-                          CircleAvatar(
-                            radius: 24.0,
-                            backgroundImage: NetworkImage(
-                              'https://scontent.fcai20-2.fna.fbcdn.net/v/t39.30808-1/260424014_4025339400902257_9114240320822830978_n.jpg?stp=dst-jpg_p160x160&_nc_cat=106&ccb=1-5&_nc_sid=7206a8&_nc_ohc=wl8Q7_xPVZwAX9eVN7f&_nc_ht=scontent.fcai20-2.fna&oh=00_AT9DDiKGHiMwn6i1C54xQrh2gxDGWai8Tv1mmmOKbwilXw&oe=6213482B',
-                            ),
-                          ),
-                        ],
-                      ),
-                      SizedBox(
-                        width: 18.0,
-                      ),
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              'Ibrahim Fathelbab fasdfsfgsdfsfsfsfsfsfsfssdfs',
-                              overflow: TextOverflow.ellipsis,
-                              maxLines: 1,
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 17.0,
-                              ),
-                            ),
-                            Row(
-                              children: [
-                                SizedBox(
-                                  width: 200,
-                                  child: Text(
-                                    'give me your ***king money asdfsafsdfsf',
-                                    overflow: TextOverflow.ellipsis,
-                                    maxLines: 1,
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 15.0,
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: EdgeInsets.symmetric(horizontal: 5),
-                                  child: Container(
-                                    width: 3,
-                                    height: 3,
-                                    decoration: BoxDecoration(
-                                      color: Colors.white,
-                                      shape: BoxShape.circle,
-                                    ),
-                                  ),
-                                ),
-                                Text(
-                                  '7:03 AM',
-                                  style: TextStyle(
-                                      color: Colors.white, fontSize: 15.0),
-                                ),
-                              ],
-                            )
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
+                  buildStoryItem(),
                   SizedBox(
-                    height: 20.0,
+                    width: 15.0,
                   ),
-                  Row(
-                    children: [
-                      Stack(
-                        alignment: Alignment.center,
-                        children: const [
-                          CircleAvatar(
-                            radius: 30.0,
-                            backgroundColor: Colors.blue,
-                          ),
-                          CircleAvatar(
-                            radius: 27.0,
-                            backgroundColor: Colors.black,
-                          ),
-                          CircleAvatar(
-                            radius: 24.0,
-                            backgroundImage: NetworkImage(
-                              'https://scontent.fcai20-2.fna.fbcdn.net/v/t39.30808-1/260424014_4025339400902257_9114240320822830978_n.jpg?stp=dst-jpg_p160x160&_nc_cat=106&ccb=1-5&_nc_sid=7206a8&_nc_ohc=wl8Q7_xPVZwAX9eVN7f&_nc_ht=scontent.fcai20-2.fna&oh=00_AT9DDiKGHiMwn6i1C54xQrh2gxDGWai8Tv1mmmOKbwilXw&oe=6213482B',
-                            ),
-                          ),
-                        ],
-                      ),
-                      SizedBox(
-                        width: 18.0,
-                      ),
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              'Ibrahim Fathelbab fasdfsfgsdfsfsfsfsfsfsfssdfs',
-                              overflow: TextOverflow.ellipsis,
-                              maxLines: 1,
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 17.0,
-                              ),
-                            ),
-                            Row(
-                              children: [
-                                SizedBox(
-                                  width: 200,
-                                  child: Text(
-                                    'give me your ***king money asdfsafsdfsf',
-                                    overflow: TextOverflow.ellipsis,
-                                    maxLines: 1,
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 15.0,
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: EdgeInsets.symmetric(horizontal: 5),
-                                  child: Container(
-                                    width: 3,
-                                    height: 3,
-                                    decoration: BoxDecoration(
-                                      color: Colors.white,
-                                      shape: BoxShape.circle,
-                                    ),
-                                  ),
-                                ),
-                                Text(
-                                  '7:03 AM',
-                                  style: TextStyle(
-                                      color: Colors.white, fontSize: 15.0),
-                                ),
-                              ],
-                            )
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
+                  buildStoryItem(),
                   SizedBox(
-                    height: 20.0,
+                    width: 15.0,
                   ),
-                  Row(
-                    children: [
-                      Stack(
-                        alignment: Alignment.center,
-                        children: const [
-                          CircleAvatar(
-                            radius: 30.0,
-                            backgroundColor: Colors.blue,
-                          ),
-                          CircleAvatar(
-                            radius: 27.0,
-                            backgroundColor: Colors.black,
-                          ),
-                          CircleAvatar(
-                            radius: 24.0,
-                            backgroundImage: NetworkImage(
-                              'https://scontent.fcai20-2.fna.fbcdn.net/v/t39.30808-1/260424014_4025339400902257_9114240320822830978_n.jpg?stp=dst-jpg_p160x160&_nc_cat=106&ccb=1-5&_nc_sid=7206a8&_nc_ohc=wl8Q7_xPVZwAX9eVN7f&_nc_ht=scontent.fcai20-2.fna&oh=00_AT9DDiKGHiMwn6i1C54xQrh2gxDGWai8Tv1mmmOKbwilXw&oe=6213482B',
-                            ),
-                          ),
-                        ],
-                      ),
-                      SizedBox(
-                        width: 18.0,
-                      ),
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              'Ibrahim Fathelbab fasdfsfgsdfsfsfsfsfsfsfssdfs',
-                              overflow: TextOverflow.ellipsis,
-                              maxLines: 1,
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 17.0,
-                              ),
-                            ),
-                            Row(
-                              children: [
-                                SizedBox(
-                                  width: 200,
-                                  child: Text(
-                                    'give me your ***king money asdfsafsdfsf',
-                                    overflow: TextOverflow.ellipsis,
-                                    maxLines: 1,
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 15.0,
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: EdgeInsets.symmetric(horizontal: 5),
-                                  child: Container(
-                                    width: 3,
-                                    height: 3,
-                                    decoration: BoxDecoration(
-                                      color: Colors.white,
-                                      shape: BoxShape.circle,
-                                    ),
-                                  ),
-                                ),
-                                Text(
-                                  '7:03 AM',
-                                  style: TextStyle(
-                                      color: Colors.white, fontSize: 15.0),
-                                ),
-                              ],
-                            )
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
+                  buildStoryItem(),
                   SizedBox(
-                    height: 20.0,
+                    width: 15.0,
                   ),
-                  Row(
-                    children: [
-                      Stack(
-                        alignment: Alignment.center,
-                        children: const [
-                          CircleAvatar(
-                            radius: 30.0,
-                            backgroundColor: Colors.blue,
-                          ),
-                          CircleAvatar(
-                            radius: 27.0,
-                            backgroundColor: Colors.black,
-                          ),
-                          CircleAvatar(
-                            radius: 24.0,
-                            backgroundImage: NetworkImage(
-                              'https://scontent.fcai20-2.fna.fbcdn.net/v/t39.30808-1/260424014_4025339400902257_9114240320822830978_n.jpg?stp=dst-jpg_p160x160&_nc_cat=106&ccb=1-5&_nc_sid=7206a8&_nc_ohc=wl8Q7_xPVZwAX9eVN7f&_nc_ht=scontent.fcai20-2.fna&oh=00_AT9DDiKGHiMwn6i1C54xQrh2gxDGWai8Tv1mmmOKbwilXw&oe=6213482B',
-                            ),
-                          ),
-                        ],
-                      ),
-                      SizedBox(
-                        width: 18.0,
-                      ),
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              'Ibrahim Fathelbab fasdfsfgsdfsfsfsfsfsfsfssdfs',
-                              overflow: TextOverflow.ellipsis,
-                              maxLines: 1,
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 17.0,
-                              ),
-                            ),
-                            Row(
-                              children: [
-                                SizedBox(
-                                  width: 200,
-                                  child: Text(
-                                    'give me your ***king money asdfsafsdfsf',
-                                    overflow: TextOverflow.ellipsis,
-                                    maxLines: 1,
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 15.0,
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: EdgeInsets.symmetric(horizontal: 5),
-                                  child: Container(
-                                    width: 3,
-                                    height: 3,
-                                    decoration: BoxDecoration(
-                                      color: Colors.white,
-                                      shape: BoxShape.circle,
-                                    ),
-                                  ),
-                                ),
-                                Text(
-                                  '7:03 AM',
-                                  style: TextStyle(
-                                      color: Colors.white, fontSize: 15.0),
-                                ),
-                              ],
-                            )
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
+                  buildStoryItem(),
                   SizedBox(
-                    height: 20.0,
+                    width: 15.0,
                   ),
-                  Row(
-                    children: [
-                      Stack(
-                        alignment: Alignment.center,
-                        children: const [
-                          CircleAvatar(
-                            radius: 30.0,
-                            backgroundColor: Colors.blue,
-                          ),
-                          CircleAvatar(
-                            radius: 27.0,
-                            backgroundColor: Colors.black,
-                          ),
-                          CircleAvatar(
-                            radius: 24.0,
-                            backgroundImage: NetworkImage(
-                              'https://scontent.fcai20-2.fna.fbcdn.net/v/t39.30808-1/260424014_4025339400902257_9114240320822830978_n.jpg?stp=dst-jpg_p160x160&_nc_cat=106&ccb=1-5&_nc_sid=7206a8&_nc_ohc=wl8Q7_xPVZwAX9eVN7f&_nc_ht=scontent.fcai20-2.fna&oh=00_AT9DDiKGHiMwn6i1C54xQrh2gxDGWai8Tv1mmmOKbwilXw&oe=6213482B',
-                            ),
-                          ),
-                        ],
-                      ),
-                      SizedBox(
-                        width: 18.0,
-                      ),
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              'Ibrahim Fathelbab fasdfsfgsdfsfsfsfsfsfsfssdfs',
-                              overflow: TextOverflow.ellipsis,
-                              maxLines: 1,
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 17.0,
-                              ),
-                            ),
-                            Row(
-                              children: [
-                                SizedBox(
-                                  width: 200,
-                                  child: Text(
-                                    'give me your ***king money asdfsafsdfsf',
-                                    overflow: TextOverflow.ellipsis,
-                                    maxLines: 1,
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 15.0,
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: EdgeInsets.symmetric(horizontal: 5),
-                                  child: Container(
-                                    width: 3,
-                                    height: 3,
-                                    decoration: BoxDecoration(
-                                      color: Colors.white,
-                                      shape: BoxShape.circle,
-                                    ),
-                                  ),
-                                ),
-                                Text(
-                                  '7:03 AM',
-                                  style: TextStyle(
-                                      color: Colors.white, fontSize: 15.0),
-                                ),
-                              ],
-                            )
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
+                  buildStoryItem(),
                   SizedBox(
-                    height: 20.0,
+                    width: 15.0,
                   ),
-                  Row(
-                    children: [
-                      Stack(
-                        alignment: Alignment.center,
-                        children: const [
-                          CircleAvatar(
-                            radius: 30.0,
-                            backgroundColor: Colors.blue,
-                          ),
-                          CircleAvatar(
-                            radius: 27.0,
-                            backgroundColor: Colors.black,
-                          ),
-                          CircleAvatar(
-                            radius: 24.0,
-                            backgroundImage: NetworkImage(
-                              'https://scontent.fcai20-2.fna.fbcdn.net/v/t39.30808-1/260424014_4025339400902257_9114240320822830978_n.jpg?stp=dst-jpg_p160x160&_nc_cat=106&ccb=1-5&_nc_sid=7206a8&_nc_ohc=wl8Q7_xPVZwAX9eVN7f&_nc_ht=scontent.fcai20-2.fna&oh=00_AT9DDiKGHiMwn6i1C54xQrh2gxDGWai8Tv1mmmOKbwilXw&oe=6213482B',
-                            ),
-                          ),
-                        ],
-                      ),
-                      SizedBox(
-                        width: 18.0,
-                      ),
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              'Ibrahim Fathelbab fasdfsfgsdfsfsfsfsfsfsfssdfs',
-                              overflow: TextOverflow.ellipsis,
-                              maxLines: 1,
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 17.0,
-                              ),
-                            ),
-                            Row(
-                              children: [
-                                SizedBox(
-                                  width: 200,
-                                  child: Text(
-                                    'give me your ***king money asdfsafsdfsf',
-                                    overflow: TextOverflow.ellipsis,
-                                    maxLines: 1,
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 15.0,
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: EdgeInsets.symmetric(horizontal: 5),
-                                  child: Container(
-                                    width: 3,
-                                    height: 3,
-                                    decoration: BoxDecoration(
-                                      color: Colors.white,
-                                      shape: BoxShape.circle,
-                                    ),
-                                  ),
-                                ),
-                                Text(
-                                  '7:03 AM',
-                                  style: TextStyle(
-                                      color: Colors.white, fontSize: 15.0),
-                                ),
-                              ],
-                            )
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
+                  buildStoryItem(),
                   SizedBox(
-                    height: 20.0,
+                    width: 15.0,
                   ),
-                  Row(
-                    children: [
-                      Stack(
-                        alignment: Alignment.center,
-                        children: const [
-                          CircleAvatar(
-                            radius: 30.0,
-                            backgroundColor: Colors.blue,
-                          ),
-                          CircleAvatar(
-                            radius: 27.0,
-                            backgroundColor: Colors.black,
-                          ),
-                          CircleAvatar(
-                            radius: 24.0,
-                            backgroundImage: NetworkImage(
-                              'https://scontent.fcai20-2.fna.fbcdn.net/v/t39.30808-1/260424014_4025339400902257_9114240320822830978_n.jpg?stp=dst-jpg_p160x160&_nc_cat=106&ccb=1-5&_nc_sid=7206a8&_nc_ohc=wl8Q7_xPVZwAX9eVN7f&_nc_ht=scontent.fcai20-2.fna&oh=00_AT9DDiKGHiMwn6i1C54xQrh2gxDGWai8Tv1mmmOKbwilXw&oe=6213482B',
-                            ),
-                          ),
-                        ],
-                      ),
-                      SizedBox(
-                        width: 18.0,
-                      ),
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              'Ibrahim Fathelbab fasdfsfgsdfsfsfsfsfsfsfssdfs',
-                              overflow: TextOverflow.ellipsis,
-                              maxLines: 1,
-                              style: TextStyle(
-                                color: Colors.white,
-                                fontSize: 17.0,
-                              ),
-                            ),
-                            Row(
-                              children: [
-                                SizedBox(
-                                  width: 200,
-                                  child: Text(
-                                    'give me your ***king money asdfsafsdfsf',
-                                    overflow: TextOverflow.ellipsis,
-                                    maxLines: 1,
-                                    style: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 15.0,
-                                    ),
-                                  ),
-                                ),
-                                Padding(
-                                  padding: EdgeInsets.symmetric(horizontal: 5),
-                                  child: Container(
-                                    width: 3,
-                                    height: 3,
-                                    decoration: BoxDecoration(
-                                      color: Colors.white,
-                                      shape: BoxShape.circle,
-                                    ),
-                                  ),
-                                ),
-                                Text(
-                                  '7:03 AM',
-                                  style: TextStyle(
-                                      color: Colors.white, fontSize: 15.0),
-                                ),
-                              ],
-                            )
-                          ],
-                        ),
-                      ),
-                    ],
+                  buildStoryItem(),
+                  SizedBox(
+                    width: 15.0,
                   ),
+                  buildStoryItem(),
+                  SizedBox(
+                    width: 15.0,
+                  ),
+                  buildStoryItem(),
                 ],
               ),
-            ],
-          ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: Column(
+                children: [
+                  buildChatItem(),
+                  SizedBox(
+                    height: 15.0,
+                  ),
+                  buildChatItem(),
+                  SizedBox(
+                    height: 15.0,
+                  ),
+                  buildChatItem(),
+                  SizedBox(
+                    height: 15.0,
+                  ),
+                  buildChatItem(),
+                  SizedBox(
+                    height: 15.0,
+                  ),
+                  buildChatItem(),
+                  SizedBox(
+                    height: 15.0,
+                  ),
+                  buildChatItem(),
+                  SizedBox(
+                    height: 15.0,
+                  ),
+                  buildChatItem(),
+                  SizedBox(
+                    height: 15.0,
+                  ),
+                  buildChatItem(),
+                  SizedBox(
+                    height: 15.0,
+                  ),
+                  buildChatItem(),
+                  SizedBox(
+                    height: 15.0,
+                  ),
+                  buildChatItem(),
+                  SizedBox(
+                    height: 15.0,
+                  ),
+                  buildChatItem(),
+                  SizedBox(
+                    height: 15.0,
+                  ),
+                  buildChatItem(),
+                  SizedBox(
+                    height: 15.0,
+                  ),
+                  buildChatItem(),
+                  SizedBox(
+                    height: 15.0,
+                  ),
+                  buildChatItem(),
+                  SizedBox(
+                    height: 15.0,
+                  ),
+                  buildChatItem(),
+                  SizedBox(
+                    height: 15.0,
+                  ),
+                  buildChatItem(),
+                  SizedBox(
+                    height: 15.0,
+                  ),
+                  buildChatItem(),
+                ],
+              ),
+            ),
+          ],
         ),
       ),
     );
   }
+
+  Widget buildStoryItem() => SizedBox(
+        width: 60.0,
+        child: Column(
+          children: [
+            Stack(
+              alignment: Alignment.bottomRight,
+              children: const [
+                CircleAvatar(
+                  radius: 30.0,
+                  backgroundImage: NetworkImage(
+                    'https://avatars.githubusercontent.com/u/19143657?v=4',
+                  ),
+                ),
+                CircleAvatar(
+                  radius: 9.0,
+                  backgroundColor: Colors.black,
+                ),
+                Padding(
+                  padding: EdgeInsetsDirectional.only(
+                    bottom: 2.0,
+                    end: 2.0,
+                  ),
+                  child: CircleAvatar(
+                    radius: 7.0,
+                    backgroundColor: Colors.green,
+                  ),
+                ),
+              ],
+            ),
+            SizedBox(
+              height: 6.0,
+            ),
+            Text(
+              'Ibrahim Fathelbab',
+              maxLines: 2,
+              style: TextStyle(color: Colors.white),
+            )
+          ],
+        ),
+      );
+  Widget buildChatItem() => Row(
+        children: [
+          Stack(
+            alignment: Alignment.center,
+            children: const [
+              CircleAvatar(
+                radius: 30.0,
+                backgroundColor: Colors.blue,
+              ),
+              CircleAvatar(
+                radius: 27.0,
+                backgroundColor: Colors.black,
+              ),
+              CircleAvatar(
+                radius: 24.0,
+                backgroundImage: NetworkImage(
+                  'https://avatars.githubusercontent.com/u/19143657?v=4',
+                ),
+              ),
+            ],
+          ),
+          SizedBox(
+            width: 18.0,
+          ),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  'Ibrahim Fathelbab',
+                  overflow: TextOverflow.ellipsis,
+                  maxLines: 1,
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontSize: 16.0,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                Row(
+                  children: [
+                    Expanded(
+                      child: Text(
+                        'give me your ***king ',
+                        overflow: TextOverflow.ellipsis,
+                        maxLines: 1,
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 16.0,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.symmetric(horizontal: 5),
+                      child: Container(
+                        width: 3,
+                        height: 3,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          shape: BoxShape.circle,
+                        ),
+                      ),
+                    ),
+                    Text(
+                      '7:03 AM',
+                      style: TextStyle(color: Colors.white, fontSize: 15.0),
+                    ),
+                  ],
+                )
+              ],
+            ),
+          ),
+        ],
+      );
 }
